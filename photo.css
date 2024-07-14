@@ -3,11 +3,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: antiquewhite;
 }
 
 body {
     font-family: 'Fira Sans', sans-serif;
+    background: linear-gradient(135deg, #f6f6f6, #e0e0e0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 /* Header Styles */
@@ -37,6 +45,7 @@ header h1 {
     width: 100%;
     border: 2px solid brown;
     border-radius: 4px;
+    background-color: #fff;
 }
 
 .search-form button {
@@ -65,7 +74,7 @@ header h1 {
 
 .gallery-info a {
     font-size: 16px;
-    color: rgb(250, 235, 235);
+    color: #fafbfb;
     border: 1px solid rgb(181, 67, 67);
     background-color: rgb(181, 67, 67);
     padding: 0.25rem 0.5rem;
@@ -85,6 +94,10 @@ header h1 {
     max-width: 90%;
     margin: auto;
     gap: 2.5rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery img {
