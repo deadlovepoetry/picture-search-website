@@ -1,18 +1,17 @@
-*{
+/* Global Reset and Setup */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: antiquewhite;
-    
-    
-    
 }
-body{
+
+body {
     font-family: 'Fira Sans', sans-serif;
-
-
 }
-header{
+
+/* Header Styles */
+header {
     min-height: 25vh;
     display: flex;
     flex-direction: column;
@@ -20,67 +19,67 @@ header{
     align-items: center;
     color: darkred;
     font-size: 1.5rem;
-
 }
 
-header h1{
+header h1 {
     margin-bottom: 1.5rem;
-
 }
 
-.search-form{
-    padding: .7rem;
+/* Search Form Styles */
+.search-form {
+    padding: 0.7rem;
     display: flex;
-
-    
 }
 
-.search-form input{
-    padding: .5rem;
+.search-form input[type="text"] {
+    padding: 0.5rem;
     font-size: 2rem;
     width: 100%;
     border: 2px solid brown;
-    
+    border-radius: 4px;
 }
 
-.search-form button{
-
+.search-form button {
     font-family: inherit;
-    border: brown;
-    padding: .5rem;
+    border: none;
+    padding: 0.5rem;
     background-color: brown;
-    
     cursor: pointer;
     font-size: 1.5rem;
     color: gainsboro;
-    transition: all .5s;;
-
+    transition: opacity 0.5s;
 }
 
-.search-form button:hover{
-    opacity: .8;
+.search-form button:hover {
+    opacity: 0.8;
 }
 
+/* Gallery Info Styles */
 .gallery-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: maroon;
-        padding-bottom: .8rem;
- 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: maroon;
+    padding-bottom: 0.8rem;
 }
 
-.gallery-info a{
-    font: caption;
+.gallery-info a {
     font-size: 16px;
     color: rgb(250, 235, 235);
     border: 1px solid rgb(181, 67, 67);
     background-color: rgb(181, 67, 67);
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity 0.5s;
 }
 
+.gallery-info a:hover {
+    opacity: 0.8;
+}
 
-
-.gallery{
+/* Gallery Styles */
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     max-width: 90%;
@@ -88,30 +87,35 @@ header h1{
     gap: 2.5rem;
 }
 
-.gallery img{
+.gallery img {
     max-width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.load-button{
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Load More Button Styles */
+.load-button {
     min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.more{
-    padding: .5rem 1rem;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+.more {
+    padding: 0.5rem 1rem;
     font-size: 1.2rem;
     background-color: burlywood;
     border: none;
     cursor: pointer;
-    transition: all .5s ;;
-
+    transition: opacity 0.5s;
 }
 
-.more:hover{
-            opacity: .5;
+.more:hover {
+    opacity: 0.8;
 }
-
