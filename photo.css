@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Fira Sans', sans-serif;
-    background: linear-gradient(135deg, #f6f6f6, #e0e0e0);
+    background: #f6f6f6 ;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
