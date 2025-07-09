@@ -1,1 +1,1 @@
-{"name": "picture-search-website", "version": "1.0.0", "scripts": {"build": "npm run build && npm run deploy"}, "dependencies": {" Deployment": "^1.2.3"}}
+"name": "picture-search-website",
